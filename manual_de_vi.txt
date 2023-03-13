@@ -1,0 +1,16 @@
+============
+Manual de VI
+============
+R = escribir reemplazando
+i = escribir insertando
+o = abrir reglón abajo
+O = abrir relglón arriba
+:w = guardar
+:W = guardar y borrar
+:q! salir sin guardar
+/balabra = buscar palabra
+n =  buscar la siguiente 
+n = buscar siguiente
+N = buscar la anterior
+:numero = se va a la línea del número
+:S = se va a la última línea.
