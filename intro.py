@@ -23,3 +23,23 @@ print(type(t)) #booleano (bool)
 #=====================
 # Mensajes en pantalla
 #=====================
+print ("Este es un comentario en python. ", "Este es otro enunciado". t)
+print ('id: ',1)
+print ('First Name: ', 'Doo') 
+print ('Last Name: ', 'Mentio')
+print ("Vamos a sumar esto" + " con esto otro")
+
+#==============================================
+# Continuar una instruccion en varios renglones
+#==============================================
+if 100 > 99 and \
+    200 <= 30 and \
+    true != False:
+	print('Hola mundo')
+
+#======================================
+# Comandos diferentes en la misma línea
+#======================================
+print ("Hola "); print ("tu!!") #Se considera mala práctica o.O
+
+
