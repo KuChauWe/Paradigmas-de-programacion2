@@ -10,9 +10,9 @@ print (2**0.5) #raíz cuadrada
 print (10%2) #residuo
 print (10%0.1) #solo de python 
 
-#==============================================
-# Para saber el tipo de objeto qque se usa type
-#==============================================
+#============================================= 
+# Para saber el tipo de objeto que se usa type 
+#============================================= 
 t=0
 print(type(t)) #entero
 t=3.6
