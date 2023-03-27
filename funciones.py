@@ -97,3 +97,28 @@ def greet(**person) # (?)
     #===================================================
     print('Hola',person['firstname'],person['lastname'])
 
+greet(firstname='Steve',lastname='Jobs')
+greet(lastname="Jobs",firstname='Steve')
+greet(firstname="Bill",lastname="Gates",age=55) #Se pueden pasar más parámetros de los necesarios
+
+#================================
+# Función con valores por defecto
+#================================
+def greet(name='Guest'):
+    print( 'Hola',name)
+
+greet() #Utiliza el valor predeterminado (Guest)
+greet('Steve')
+
+#=======================
+# Función como resultado
+#=======================
+def suma (a,b):
+    return a + b
+
+#========================================
+# Programación funcional
+# Se puede hacer una función de funciones
+#========================================
+total = suma (5,suma(10,20))
+print (total)
