@@ -83,4 +83,17 @@ muchos_saludos("Bosco","Angel","David","Tamara","Mili","Edwin","Lev","Luis","Abi
 def greet(firstname,lastname):
     print ("Hello", firstname,lastname)
 
+#===============================================
+# Llamar a la función con argumentos en desorden
+#===============================================
+greet(lastname = 'Jobs',firstname='Steve') #Se pueden especificar las variables en desorden
+
+#=====================================
+# Función con argumentos escondidos **
+#=====================================
+def greet(**person) # (?)
+    #===================================================
+    # persona tiene características firstname y lastname
+    #===================================================
+    print('Hola',person['firstname'],person['lastname'])
 
