@@ -137,4 +137,23 @@ print (a1)
 suma = lambda x1,x2,x3: x1+x2+x3
 print (suma(99,98,97))
 
-sumas = lambda 
+sumas = lambda *x: x[0]+x[1]+x[2]+x[3]
+
+print (sumas(100,200,300,400))
+
+#===========================
+# Uso de una función anónima 
+#===========================
+print ((lambda x : x * x)(6)) # Función anónima
+
+#============================
+# Función con variable global
+# EVITAR EL EXCESOOOOOOOOO
+#============================
+name = 'Steve'
+def greet():
+    global name # para utilizar ua variable global (que viene afuera del bloque)
+    name = 'Bill'
+    print ('Hola',name)
+
+greet()
