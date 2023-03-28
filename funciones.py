@@ -122,3 +122,19 @@ def suma (a,b):
 #========================================
 total = suma (5,suma(10,20))
 print (total)
+
+#================================================
+# Cálculo lambda
+# nombre de la función = lambda variable : función
+#================================================
+x_al_cuadrado = lambda x : x * x
+a1 = x_al_cuadrado(5)
+print (a1)
+
+#===========================
+# Lambda de varias variables
+#===========================
+suma = lambda x1,x2,x3: x1+x2+x3
+print (suma(99,98,97))
+
+sumas = lambda 
