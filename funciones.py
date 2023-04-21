@@ -33,7 +33,7 @@ print (salida)
 #======================
 def salu2(nombre):
     """Esta función te saluda por tu nombre"""
-    print ("Hola muy buenas",nombre;"o.O")
+    print ("Hola muy buenas",nombre,"o.O")
 salu2("Julián")
 salu2("Hugo")
 
@@ -53,7 +53,7 @@ saludos(a)
 #==============================
 # Función con muchos argumentos
 #==============================
-def saludos_multriples(nombre1,nombre2,nombre3):
+def saludos_multiples(nombre1,nombre2,nombre3):
     """Esta función saluda a 3 personas al mismo tiempo"""
     print ("Hola ",nombre1,", ",nombre2," y ",nombre3)
 
@@ -91,7 +91,7 @@ greet(lastname = 'Jobs',firstname='Steve') #Se pueden especificar las variables 
 #=====================================
 # Función con argumentos escondidos **
 #=====================================
-def greet(**person) # (?)
+def greet(**person): # (?)
     #===================================================
     # persona tiene características firstname y lastname
     #===================================================
