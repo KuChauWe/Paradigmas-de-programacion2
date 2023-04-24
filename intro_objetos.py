@@ -19,6 +19,7 @@ print(type(nada))
 #================
 # La clase llanta
 #================
+class Llanta:
     #====================================
     # Variable cuenta es de toda la clase
     #====================================
@@ -32,7 +33,7 @@ print(type(nada))
     #==================================
     def __init__(mi,radio=50,ancho=30,presión=1.5):
         #Variablede la estructura completa Llanta
-        Llata.cuenta += 1
+        Llanta.cuenta += 1
         # Variables de cada objeto
         mi.radio = radio
         mi.ancho = ancho
@@ -59,4 +60,51 @@ class Coche :
 
 micoche = Coche(llanta1,llanta2,llanta3,llanta4)
 
-print("Total de llantas: "Llanta.cuenta) #variable global de la clase
+print("Total de llantas: ",Llanta.cuenta) #variable global de la clase
+print("Presión de llanta 4 = ",llanta4.presión) #Presión de la llanta 4
+print("Radio de la llanta 4 = ", llanta4.radio)
+print("Radio de la llanta 3 = ", llanta3.radio)
+print("Presión de la llanta 1 de mi coche = ",micoche.llanta1.presión)
+
+#================
+# Encapsulamiento
+#================
+
+#====================================================================
+# Uso de la función de python property para poner y obtener atributos
+#====================================================================
+class Estudiante:
+    def __init__(mi):
+        mi.__nombre= ''
+    def ponerme_nombre(mi,nombre):
+        print("Se llamó a ponerme_nombre")
+        mi.__nombre = nombre 
+    def obtener_nombre(mi):
+        print("Se llamó a obtener_nombre")
+        return mi.__nombre
+    nombre = property(obtener_nombre,ponerme_nombre)
+
+#======================================
+# Crear un objeto estudiante sin nombre
+#======================================
+estudiante = Estudiante()
+
+#=====================================================================
+# Ponerle nombre usando la propiedad nombre y el método ponerme_nombre
+# (sin tener que llamar explicitamente a la función)
+#=====================================================================
+
+estudiante.nombre = "Diego"
+
+#================================================================
+# Obtener el nombre con el método obtener_nombre
+# __nombre es una variable encapsulada (no visible desde fuera)
+# (sin tener que llamar explítamente a la función obtener_nombre)
+#================================================================
+print(estudiante.nombre)
+
+# ojo piojo
+# print(estudiante.__nombre) NO FUNCIONA
+
+
+
