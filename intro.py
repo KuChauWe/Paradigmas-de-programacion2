@@ -23,7 +23,7 @@ print(type(t)) #booleano (bool)
 #=====================
 # Mensajes en pantalla
 #=====================
-print ("Este es un comentario en python. ", "Este es otro enunciado". t)
+print ("Este es un comentario en python. ", "Este es otro enunciado")
 print ('id: ',1)
 print ('First Name: ', 'Doo') 
 print ('Last Name: ', 'Mentio')

@@ -23,7 +23,7 @@ if total > 100:
     if total > 500:
         print ("Total es mayor que 500")
     else:
-        if total < 500 and tootal > 400:
+        if total < 500 and total > 400:
             print ("Total es menor que 500 pero mayor que 400")
         elif total < 500 and total > 300:
             print ("Total entre 300 y 500")
@@ -48,15 +48,15 @@ num = 0
 while num < 5:
     num += 1                # num += 1 es lo mismo que num = num + 1
     print ('num = ', num)   
-    if num == 3             # condición antes de sallir del bucle
+    if num == 3:             # condición antes de sallir del bucle
         break 
 
 num = 0
 while num < 5:
     num += 1
     if num > 3:
-        continue            # evitar lo que sigue, continuar con las iteracines
-es
+        continue            # evitar lo que sigue, continuar con las iteracines es
+
     print ('num = ',num)
 
 #==================
@@ -77,7 +77,7 @@ for char in 'Hello':
 # items = elementos
 #===========================
 numNames = {1:'One',2:'Two',3:'Three'}
-for pair in nomNames.items():
+for pair in numNames.items():
     print (pair)
 
 #========================

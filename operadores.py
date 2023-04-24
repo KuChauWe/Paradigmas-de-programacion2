@@ -81,7 +81,7 @@ romanNums = {'I':1,'II':2,'III':3,'IV':4,'V':5}
 print (romanNums)
 print (romanNums["I"])
 
-print (capital.get("Uganda"))
+print (capitals.get("Uganda"))
 print (items.get(("Parker","Reynols","Camlin")))
 
 # Reportar llave y valor
