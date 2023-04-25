@@ -106,5 +106,41 @@ print(estudiante.nombre)
 # ojo piojo
 # print(estudiante.__nombre) NO FUNCIONA
 
+#===================
+# Herencia de clases
+#===================
+class Cuadrilatero:
+    def __init__(mi,a,b,c,d):
+        mi.lado1 = a
+        mi.lado2 = b
+        mi.lado3 = c
+        mi.lado4 = d
 
+    def perimetro(mi):
+        p = mi.lado1 + mi.lado2 + mi.lado3 + mi.lado4
+        print("Perimetro = ",p)
+        return p
 
+#===================================
+# Su eterno hijo, el rectángulo
+# Rectángulo es hijo de Cuadrilátero
+# Rectángulo (Cuadrilátero)
+#===================================
+class Rectangulo(Cuadrilatero):
+    def __init__(self,a,b):
+        #========================
+        # Constructor de su madre
+        #========================
+        super().__init__(a,b,a,b)
+
+#==========================
+# Su nieto, Cuadrado
+# Hijo de el Sr. Rectángulo
+#==========================
+class Cuadrado(Rectangulo):
+    def __init__(self,a):
+        super().__init__(a,a)
+
+    def area(self):
+        area = self.lado1**2
+        return area
