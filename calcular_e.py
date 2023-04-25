@@ -19,5 +19,5 @@ for i in range(n,0,-1):
 if flag == True: 
  s = 1/s
 
-print (s)
+print(s)
 
