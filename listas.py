@@ -3,7 +3,7 @@
 # Las listas pueden ser objetos diferentes
 #=========================================
 miprimeralista = [] # lista vacía
-print (miprimeralista)
+print(miprimeralista)
 
 #=================
 # Llenado de lista
@@ -18,7 +18,7 @@ print(miprimeralista)
 nums = list(range(1,61))
 
 for i in nums:
-    print (i)
+    print(i)
 
 #=====================================
 # Incluir nuevos elementos en la lista
@@ -32,14 +32,14 @@ print(nums)
 # Quitar elementos de la lista
 #=============================
 nums.remove(61)
-print (nums)
+print(nums)
 
 #=============================
 # Quitar elemento con índice i
 #=============================
 i = 61
 del nums[i]
-print (nums)
+print(nums)
 
 #================
 # Borrar la lista
@@ -51,7 +51,7 @@ del nums
 #=============
 L1 = [1,2,3]
 L2 = [4,5,6]
-print (L1+L2)
+print(L1+L2)
 
 #===============
 # Llenado a mano
@@ -59,7 +59,7 @@ print (L1+L2)
 potencial = []
 for i in range(0,10000):
     potencial.append(float(i))
-print (potencial[100])
+print(potencial[100])
 
 #===============================
 # Generar una tupla con la lista
