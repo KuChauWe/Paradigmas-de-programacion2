@@ -144,3 +144,21 @@ class Cuadrado(Rectangulo):
     def area(self):
         area = self.lado1**2
         return area
+    
+    #def perimetro(self):
+    #   p = 4.0*self.lado1
+    #   print("perimetro = ",p)
+    #   return p
+
+#==================
+# Crear un cuadrado
+#==================
+cuadrado1 = Cuadrado(5)
+
+#=============================================================
+# Llamar al método perímetro de su abuelo, el Sr. Cuadrilátero
+#=============================================================
+perimetro1 = cuadrado.perimetro()
+
+
+
