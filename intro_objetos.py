@@ -158,7 +158,17 @@ cuadrado1 = Cuadrado(5)
 #=============================================================
 # Llamar al método perímetro de su abuelo, el Sr. Cuadrilátero
 #=============================================================
-perimetro1 = cuadrado.perimetro()
+perimetro1 = cuadrado1.perimetro()
 
+#================================
+# Llama a su propio método (área)
+#================================
+area1 = cuadrado1.area()
 
+print("Perímetro = ", perimetro1)
+print("Área = ",area1)
 
+#===============================================================
+# Sobre-escribir un método de su madre o abuela o tatarabuela...
+# Es volver a definir una función ya existente
+#===============================================================
