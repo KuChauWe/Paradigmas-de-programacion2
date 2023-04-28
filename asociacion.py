@@ -59,7 +59,7 @@ class C:
 # COMPOSICIÓN
 # Contiene otro objeto dentro
 #============================
-objetosC = C(4.0,5.0)
+objetoC = C(4.0,5.0)
 print(objetoC.sumar_todo())
 
 #=======================================
@@ -71,5 +71,21 @@ class D:
     __e:float=0.0
     __Aa:A=None
 
+    def __init__ (self,d:float,e:float,Aa:A):
+        self.d = d
+        self.e = e
+        self.Aa = Aa
+
     def sumar_todo(self):
-        x:float 
+        x:float=self.d+self.e+self.Aa.a+self.Aa.b
+        return x
+
+
+#=======================================
+# AGREGACIÓN
+# Construye el objeto agregado por fuera
+#=======================================
+objetoD = D(4.0,5.0,objetoA)
+print(objetoD.sumar_todo())
+
+
