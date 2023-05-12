@@ -57,3 +57,13 @@ repositorioSistemaDeArchivos = SistemaDeArchivos("/home/users")
 ManejoDeInscripciones.inscribirUsuario(usuario,repositorioSistemaDeArchivos)
 print("\n")
 
+#=============================
+#  Crear el objeto basededatos
+#=============================
+repositorioBaseDeDatos = BaseDeDatos("localhost","admin","admin123")
+
+#=============================================================
+# Interfase inscribir usuario del objeto ManejoDeInscripciones
+#=============================================================
+ManejoDeInscripciones.inscribirUsuario(usuario,repositorioBaseDeDatos)
+print("\n")
