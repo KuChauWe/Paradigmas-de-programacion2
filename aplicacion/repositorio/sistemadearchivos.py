@@ -8,10 +8,10 @@ class SistemaDeArchivos(RepositorioDeUsuarios):
     __directorio: str
 
     def __init__(mi,directorio:str):
-        mi.directorio = directorio
+        mi.__directorio = directorio
 
     def abrir(mi) -> None:
-        print(f"Abrir directorio: {mi.__directorio}[]")
+        print(f"Abrir directorio: {mi.__directorio}")
 
     def guardar(mi,usuario:Usuario) -> None:
         xml = f"</root></name>{usuario.getNombre()}</name></lastname>{usuario.getApellido()}</lastname></age><>{usuario.getEdad()}</age></root>"
