@@ -20,7 +20,7 @@ def arbol(i:float,angulo:float):
     else:
         tortuga.forward(i)      #Camina i
         tortuga.left(angulo)    #Gira a la izquierda 90 grados
-        arbol(30.0*i/4.25,angulo)   #Pide otro arbol y cambia la longitud del paso
+        arbol(3.0*i/4.25,angulo)   #Pide otro arbol y cambia la longitud del paso
         tortuga.right(2*angulo) #Gira a la derecha 180 grados
         arbol(3.0*i/4.25,angulo)
         tortuga.left(angulo)
