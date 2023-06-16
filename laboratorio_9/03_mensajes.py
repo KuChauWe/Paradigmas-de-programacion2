@@ -52,6 +52,10 @@ if __name__ == "__main__":
 
     # Si no soy par
     else:
-        #
-        # Recibir primero y mandar mensaje 
-        #
+        #=========================================
+        # Recibir primero y mandar mensaje despues
+        #=========================================
+        m = comm.recv(source=fuente)
+        comm.send(s,dest=destino)
+
+    print("Soy el proceso ",rankm ",el resultado es ", len(m.x),",", m.p)
