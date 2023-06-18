@@ -1,7 +1,7 @@
 #==============================================
 # Uso de MPI optimizado para cálculos numéricos
 #==============================================
-from mpi4y import MPI
+from mpi4py import MPI
 import numpy as np
 
 class Mensaje:

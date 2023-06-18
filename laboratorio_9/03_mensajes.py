@@ -48,7 +48,7 @@ if __name__ == "__main__":
         #=====================================
         # Recibir de source y lo que pone en m
         #=====================================
-        m = comm.racv(source=fuente)
+        m = comm.recv(source=fuente)
 
     # Si no soy par
     else:
@@ -58,4 +58,4 @@ if __name__ == "__main__":
         m = comm.recv(source=fuente)
         comm.send(s,dest=destino)
 
-    print("Soy el proceso ",rankm ",el resultado es ", len(m.x),",", m.p)
+    print("Soy el proceso ",rank,  ",el resultado es ", len(m.x),",", m.p)
