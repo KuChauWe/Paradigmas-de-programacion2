@@ -45,4 +45,16 @@ class Curva:
 
         # Tupla de variables a imprimir
         for i in range(0,s.n):
-            s.tup
+            s.tup = (s.x[i],)
+            for ii in range(1,s.dim):
+                s.tup = s.tup + (s.x{i+ii*s.n},)
+            print(s.formato % s.tup)
+
+    #=======================
+    # Longitud punto a punto
+    #=======================
+    def longitud(s) -> None:
+        t:np.float64 = 0.0
+        for i in range(0,s.n):
+            ip1 = i+1
+            if i == s.n
