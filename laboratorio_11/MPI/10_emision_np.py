@@ -2,7 +2,7 @@ from mpi4py import MPI
 import numpy
 
 comm = MPI.COMM_WORLD
-rank = com.Get_rank()
+rank = comm.Get_rank()
 
 # Tamaño del arreglo
 n = 10

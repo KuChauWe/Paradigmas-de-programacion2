@@ -1,7 +1,7 @@
-#===========================================================
+#==========================================================
 # Ejemplo de comunicacion bloqueada a un arreglo compartido
 # Uso de candados (locks)
-#===========================================================
+#==========================================================
 from multiprocessing import Process, Array, Lock
 import time
 
@@ -18,9 +18,9 @@ def sumale100(numeros, candado):
 
 
 if __name__ == "__main__":
-    #=?0=================================================
+    #=?0===============================================
     # Candado para evitar que dos procesos se empapelen
-    #====================================================
+    #==================================================
     candado = Lock()
 
     # Numero comun a los procesos, d de dobles
