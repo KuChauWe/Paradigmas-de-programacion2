@@ -1,0 +1,40 @@
+#===========================================================
+# Ejemplo de comunicacion bloqueada a un arreglo compartido
+# Uso de candados (locks)
+#===========================================================
+from multiprocessing import Process, Array, Lock
+import time
+
+def sumale100(numeros, candado):
+    for i in range(100):
+        time.sleep(0.01)
+        # Usando candado
+        for i in range(len(numeros)):
+            # lo que este dentro de con candado no puede accederse
+            # desde otro proceso al mismo tiempo
+            with candado:
+                # Hacer la operacion
+                numeros[i] += 1
+
+
+if __name__ == "__main__":
+    #=?0=================================================
+    # Candado para evitar que dos procesos se empapelen
+    #====================================================
+    candado = Lock()
+
+    # Numero comun a los procesos, d de dobles
+    numeros_compartidos = Array("d", [0.0, 100.0, 200.0])
+
+    # : quiere decir todos lo elementos
+    print("Al principio vale = ", numeros_compartidos[:])
+
+    #Dos Procesos
+    p1 = Process(target=sumale100, args=(numeros_compartidos,candado))
+    p2 = Process(target=sumale100, args=(numeros_compartidos,candado))
+
+    p1.start()
+    p2.start()
+
+    p1.join()
+    p2.join()
