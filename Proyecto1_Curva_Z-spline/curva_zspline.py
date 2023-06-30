@@ -79,9 +79,9 @@ class Curva:
         i: np.int32 = int(r * s.L * rdx)
         a: np.float64 = r * s.L * rdx - float(i)  # Distancia normalizada
 
-        # ========================
+        # =======================
         # interpolacion lineal C0
-        # ========================
+        # =======================
         if p == 0:
             ip1: np.int32 = i + 1
             if i == s.n - 1:
