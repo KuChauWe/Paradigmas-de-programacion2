@@ -13,7 +13,7 @@ def sumale100(numeros, candado):
             # lo que este dentro de con candado no puede accederse
             # desde otro proceso al mismo tiempo
             with candado:
-                # Hacer la operacion
+                # Hacer la operación
                 numeros[i] += 1
 
 
