@@ -4,13 +4,13 @@
 # Hugo Gómez ESFM IPN 2023
 #==============================
 import numpy as np
-from curva import Curva,zspline
+from Curva import Curva,zspline
 import matplotlib.pyplot as plt
 import math
 
-#=======================
+#===================
 # Conjunto de puntos
-#=======================
+#===================
 # Número de puntos
 nump:np.int32 = 8
 # Dimensión
@@ -24,10 +24,10 @@ puntos[0:nump] = np.cos(X[0:nump]) + 0.0*np.sin(2*X[0:nump])
 # Coordenada y
 puntos[nump:2*nump] = np.sin(X[0:nump]) + 0.0*np.sin(2*X[0:nump])
 
-#=================================================UwU==============
+#=================================================UwU===========
 # Curva Z-spline de n puntos zspline(p,d,n,m)
 # p: puntos, d: dimnesión, n: segmentos de curva, m: continuidad
-#=================================================================
+#===============================================================clear
 n:np.int32 = 1000
 x1,y1 = zspline(puntos,dim,n,2)
 x2,y2 = zspline(puntos,dim,n,1)
