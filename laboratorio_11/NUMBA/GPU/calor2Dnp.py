@@ -9,7 +9,7 @@ from numba import jit
 
 #=================
 # Número de celdas
-#====================
+#=================
 
 n = np.array([512, 512])
 
